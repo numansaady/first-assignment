@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+/* Color Code
+#FFAD5A
+#333333
+#3E3E3E
+
+*/
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+    color: 333333;
+}
+h4 {
+    font-size: 24px;
+}
+
