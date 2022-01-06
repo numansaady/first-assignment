@@ -8,15 +8,7 @@ body {
     font-size: 18px;
     line-height: 28px;
 }
-/* Color Code
-#FFAD5A
-#333333
-#3E3E3E
-#0B0D17
-font-family: 'Lobster', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Yeseva One', cursive;
-*/
+
 /* Common CSS */
 .sec-padding {
     padding: 50px 0;
@@ -30,12 +22,18 @@ font-family: 'Yeseva One', cursive;
     padding: 10px 40px;
     background-image: linear-gradient(to right, #FFAD5A ,#da7714 );
     color: #fff;
+    transition: all .4s ease-in;
+}
+.btn-style:hover {
+    background-image: linear-gradient(to right, #da7714, #FFAD5A );
 }
 .sec-title {
     text-align: center;
     color: #13103A;
     text-shadow: 2px 3px 4px rgb(143, 142, 142);
 }
+
+/* Typography CSS */
 h1 {
     font-family: 'Yeseva One', cursive;
     font-size: 60px;
@@ -64,9 +62,8 @@ img {
     margin: 0 auto;
     align-items: center;
 }
-.hero-area {
 
-}
+/* Hero Area CSS */
 .left-content {
     width: 55%;
     padding-right: 10%;
@@ -85,31 +82,34 @@ img {
     width: 100%
 }
 
-.mission-area {
-
-}
-.mission-item {
+/* Service Area CSS */
+.service-item {
     width: 32%; 
     margin-right: 20px;
     background-color: #ddd; 
     border-radius: 10px;
     padding: 20px;
 }
-.mission-item img {
+.service-item img {
     width: 40%;
 }
-.mission-item.a {
+.service-item.a {
     background-color: #4F9DA6; 
 }
-.mission-item.b {
+.service-item.b {
     background-color: #FF5959; 
 }
-.mission-item.c {
+.service-item.c {
     margin-right: 0px;
     background-color: #FFF4D6; 
 }
-.develop-area {
 
+/* Project Area CSS */
+.ride-area {
+    background-image: url(./images/shapes/bg-shape.png), url(./images/shapes/shape-1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, center left;
+    background-size: auto, 20%;
 }
 .col-2-img {
     width: 40%;
@@ -117,21 +117,115 @@ img {
 .col-2-text {
     width: 60%;
 }
-.develop-area .col-2-img {
+.col-2-text h4 {
+    margin-bottom: 15px;;
+}
+.ride-area .col-2-img {
     margin-right: 40px;
 }
-.community-area {
-
+.made-with {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
-.community-area .col-2-img {
+.made-with li i {
+    font-size: 30px;
+    cursor: pointer;
+}
+.ride-area .made-with li i {
+    margin-right: 10px;
+}
+.music-area {
+    background-image: url(./images/shapes/bg-shape.png), url(./images/shapes/shape-1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto, 20%;
+}
+.music-area .col-2-text {
+    text-align: right;
+}
+.music-area .made-with {
+    justify-content: flex-end;
+}
+.music-area .made-with li i {
+    margin-left: 10px;
+}
+.music-area .col-2-img {
     margin-left: 40px;
 }
 
+/* Get In Touch Area CSS */
+.get-in-touch-area {
+    box-shadow: 0px 4px 8px #8697a81a; 
+    border-radius: 50px;
+    padding: 48px;
+}
+.email-box, 
+.calendar-box {
+    flex-basis: 50%;
+    max-width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 8px #8697a81a;
+    transition: all 0.3s ease-in;
+    border: 1px solid #eee;
+    padding: 24px;
+    border-radius: 15px;
+}
+.email-box i,
+.calendar-box i {
+    display: inline-block;
+    padding: 18px;
+    background: #f7f7f7;
+    border-radius: 7px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.email-box a, 
+.calendar-box a {
+    display: block;
+    text-decoration: none;
+}
+.email-box {
+    margin-right: 10px;
+}
+.calendar-box {
+    margin-left: 10px;    
+}
+.contact-form-box {
+    width: 1128px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-form {
+    margin-top: 48px;
+}
+input, textarea {
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in;
+    font-family: 'Poppins', sans-serif;
+    padding: 11px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    display: block;
+}
+button {
+    padding: 14px 40px;
+    font-size: 18px;
+    border: none;
+    background-color: #8444df;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    width: 140px;
+    margin: 20px auto 0;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
 
-
-
-
-
+/* Footer Area CSS */
 .footer {
     background-color: #0B0D17;
     color: #fff;
